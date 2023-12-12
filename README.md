@@ -23,3 +23,11 @@ python train.py --lr 1e-6 --wd 0.2 --epochs 1 --use_ewc &
 tmux detach
 ```
 Grab some popcorn and relax because it might take a while...
+
+## Project Structure
+This project has been built using a popular open-source continual learning library called avalanche (it's awesome). Here is the high level description of the various components:
+- dataset.py: dataset fetching, preprocessing and loading
+- models.py: all model classes (only 1 for now)
+- plugins.py: custom implementation of online EWC
+- strategies.py: miscellaneous code necessary to integrate some customizations to mix well with avalanche tools
+- utils.py: mostly parsing utils for training args
