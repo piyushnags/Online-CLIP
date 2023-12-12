@@ -1,0 +1,12 @@
+torch
+torchvision
+transformers
+avalanche-lib
+matplotlib
+numpy
+pandas
+ftfy
+tqdm
+regex
+scikit-learn
+gdown
