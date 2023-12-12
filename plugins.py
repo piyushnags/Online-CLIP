@@ -57,7 +57,6 @@ class ClipEWCPlugin(EWCPlugin):
 
             optimizer.zero_grad()
 
-            # Modified this part to use OpenAI module WITH labels
             out = model(x, self.labels)
 
             loss = criterion(out, y)
